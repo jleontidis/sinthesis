@@ -1,0 +1,390 @@
+/*
+Theme Name: Sinthesis
+Author: Jerome Leontidis
+Author URI: http://www.breezeblocks.info/
+Description: Sinthesis template for wordpress
+Version: 1.0
+*/
+
+body
+{
+/*	background-color:#FBFBFB;*/
+   /* background-color:#eeeae7;*/
+   background: url("img/grey.jpg");
+}
+.navigation
+{
+	background-color: #364956;
+    border-bottom: 5px solid #0A97CD;
+}
+.btn-info.active, .btn-info:active, .btn-info:hover, .open>.dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #0A97CD;
+    border-color: #269abc;
+}
+
+h1.logo img
+{
+	width:250px;
+}
+nav li a 
+{
+	color:#fff;
+	font-size:14px;
+	font-weight:600;
+	line-height:25px;	
+}
+.nav-pills > li > a
+{
+	border-radius:0;
+}
+.nav > li > a:focus, .nav > li > a:hover
+{
+	background-color:#0A97CD;
+	color:#fff;
+}
+.icon-bar
+{
+	background-color:white;
+}
+.page
+{
+	padding-top:45px;
+}
+.page-header
+{
+margin-top:0px;
+}
+article.post, article.page
+{
+	background-color:#fff;
+	padding:20px;
+	margin-bottom:30px;
+	border: 1px solid #cdcdcd;
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
+    border-radius: 3px;
+}
+article.post header
+{
+	float:left;
+	margin-bottom:15px;
+}
+.title
+{
+	font-size:24px;
+	margin-top:15px;
+	margin-bottom: 5px;
+}
+.title a
+{
+	color:#000;
+}
+.page-title
+{
+	font-size: 32px;
+    line-height: 1.4;
+    padding: 0;
+	margin-top:10px;
+}
+.page-body
+{
+	margin-top:20px;	
+}
+.breadcrumb
+{
+	background-color:transparent;
+    margin-top: 20px;
+    margin-bottom:10px;
+}
+
+.post-date-ribbon
+{
+	background-color:#0A97CD;
+	color:#fff;
+	position:relative;
+	height:25px;
+	line-height:25px;
+	margin-top:-30px;
+	width:100px;
+	font-size:12px;
+	text-align:center;
+}
+
+.corner
+{
+	border-color:transparent transparent #0A97CD;
+	position:absolute;
+	height:0;
+	width:0;
+	border-width: 0 0 10px 10px;
+	left:-10px;
+	border-style:solid;
+}
+
+.post-info
+{
+	color:#999;
+	display:block;
+	font-size:17px;
+}
+.post-info a
+{
+font-size: 13px;
+	color:#000;
+}
+.author_mt .mt_icon
+{
+	background:rgba(0, 0, 0, 0) url("img/meta.png") no-repeat scroll 0 4px;
+	margin-right:7px;
+	width:20px;
+}
+.hp_meta span
+{
+	display:inline-block;
+	float:left;
+	height:22px;
+}
+.hp_meta
+{
+	float:left;
+}
+.cat_mt .mt_icon
+{
+	background:rgba(0, 0, 0, 0) url("img/meta.png") no-repeat scroll -20px 4px;
+	margin-left:10px;
+	margin-right:7px;
+	width:17px;
+}
+
+.comment_mt .mt_icon
+{
+	background:rgba(0, 0, 0, 0) url("img/meta.png") no-repeat scroll -38px 4px;
+	margin-left:10px;
+	margin-right:7px;
+	width:20px;
+}
+
+.media-left, .media > .pull-left
+{
+	padding-right:15px;
+}
+
+.media-left img
+{
+	width:150px;
+	height:150px;
+}
+
+.readmore
+{
+	margin-top:10px;
+	height:30px;
+}
+
+.readmore a
+{
+	float:right;
+}
+
+footer#pagefooter
+{
+	background-color:#0A97CD;
+	height:300px;
+}
+.copyright
+{
+	color:#fff;
+}
+
+/* Sidebar */
+.s {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+    text-indent: 10px;
+    width: 70%;
+}
+fieldset
+{
+	width:100%;
+}
+.s, #searchform fieldset
+{
+	float:left;
+	
+}
+.search h3
+{
+	  font-size: 22px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 5px 0 15px;
+}
+#searchform input 
+{
+    border: 0 none;
+}
+
+#searchform input[type="submit"] 
+{
+	background-color: #0A97CD;
+    color: #fff;
+    cursor: pointer;
+    height: 37px;
+    padding-bottom: 0;
+    padding-top: 0;
+    transition: all 0.25s linear 0s;
+    width: 29.6%;
+}
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #0A97CD;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	background: url(img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+#wpt_widget-2_content ul.wpt-tabs.has-2-tabs
+{
+  padding-left: 0px;
+    float: left;
+    width: 100%;
+    padding: 0;
+	margin:0px;
+    text-align: center;
+}
+
+#wpt_widget-2_content.wpt_widget_content .tab_title a {
+    background:none repeat scroll 0 0 transparent;
+	border: none;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+#wpt_widget-2_content{
+border:none;
+}
+#wpt_widget-2_content.wpt_widget_content .tab_title.selected a
+{
+   background:#fff;
+border:1px solid #cdcdcd;
+border-bottom:none;
+
+}
+#wpt_widget-2_content.wpt_widget_content .inside{
+border:1px solid #cdcdcd;
+border-top:none;
+}
+#popular-tab-content ul, #recent-tab-content ul{
+    float: left;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}

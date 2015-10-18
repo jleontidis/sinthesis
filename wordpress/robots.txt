@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /events/action~posterboard/
+Disallow: /events/action~agenda/
+Disallow: /events/action~oneday/
+Disallow: /events/action~month/
+Disallow: /events/action~week/
+Disallow: /events/action~stream/
+Disallow: /%ce%b5%ce%ba%ce%b4%ce%b7%ce%bb%cf%8e%cf%83%ce%b5%ce%b9%cf%82/action~posterboard/
+Disallow: /%ce%b5%ce%ba%ce%b4%ce%b7%ce%bb%cf%8e%cf%83%ce%b5%ce%b9%cf%82/action~agenda/
+Disallow: /%ce%b5%ce%ba%ce%b4%ce%b7%ce%bb%cf%8e%cf%83%ce%b5%ce%b9%cf%82/action~oneday/
+Disallow: /%ce%b5%ce%ba%ce%b4%ce%b7%ce%bb%cf%8e%cf%83%ce%b5%ce%b9%cf%82/action~month/
+Disallow: /%ce%b5%ce%ba%ce%b4%ce%b7%ce%bb%cf%8e%cf%83%ce%b5%ce%b9%cf%82/action~week/
+Disallow: /%ce%b5%ce%ba%ce%b4%ce%b7%ce%bb%cf%8e%cf%83%ce%b5%ce%b9%cf%82/action~stream/
