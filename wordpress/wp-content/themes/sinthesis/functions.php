@@ -98,15 +98,15 @@ if (function_exists('register_sidebar')) {
 }
 function widgetized_footer() {
 	?>
-		<div class="col-md-4">
+		<div class="col-xs-12 col-sm-4 col-md-4">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 1') ) : ?>
 			<?php endif; ?>
 		</div>
-		<div class="col-md-4">
+		<div class="col-xs-12 col-sm-4 col-md-4">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 2') ) : ?>
 			<?php endif; ?>
 		</div>
-		<div class="col-md-4">
+		<div class="col-xs-12 col-sm-4 col-md-4">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer 3') ) : ?>
 			<?php endif; ?>
 		</div>

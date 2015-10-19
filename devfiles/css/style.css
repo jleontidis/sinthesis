@@ -19,8 +19,8 @@ body
 }
 .btn-info.active, .btn-info:active, .btn-info:hover, .open>.dropdown-toggle.btn-info {
     color: #fff;
-    background-color: #0A97CD;
-    border-color: #269abc;
+    background-color: #086F96;
+    border-color: #086F96;
 }
 
 h1.logo img
@@ -38,7 +38,7 @@ nav li a
 {
 	border-radius:0;
 }
-.nav > li > a:focus, .nav > li > a:hover
+.current-menu-item,.nav > li > a:focus, .nav > li > a:hover
 {
 	background-color:#0A97CD;
 	color:#fff;
@@ -188,12 +188,19 @@ font-size: 13px;
 
 footer#pagefooter
 {
-	background-color:#0A97CD;
-	height:300px;
+
+    background-color: #0A97CD;
+        height: 100%;
+    margin-top: 10px;
+  
+    width: 100%;
+
 }
 .copyright
 {
+    margin-top: 20px;
 	color:#fff;
+    text-align: center;
 }
 
 /* Sidebar */

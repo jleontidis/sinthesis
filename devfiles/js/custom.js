@@ -39,10 +39,18 @@
 	closeBttn.addEventListener( 'click', toggleOverlay );
 })();
 
-$( document ).ready(function() {
-$('div#post-125.g.post.post-125.page.type-page.status-publish.hentry').addClass("container");
 
+    $(document).ready(function(){
+        $(".navbar-toggle.collapsed").click(function(){
+            $("body").toggleClass("overflowcheck"); 
+        });
+    $(".overlay-close").click(function(){
+            $("body").toggleClass("overflowcheck"); 
+        });
+    
 });
+    
+
 
 function showsuccess()
 {

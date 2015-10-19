@@ -67,6 +67,9 @@ input:focus{
 position:relative;
 }
 
+.content_box .page-header{
+border:none;
+}
 
 .searchbar{
     float: right;
@@ -98,9 +101,12 @@ position:relative;
 	.widget.widget_search{
 	    float: left;
     width: 100%;
-    height: 70px;
-	}
+        margin-top:0px;
 
+	}
+.widget{
+margin-top:20px;
+}
 
 #searchform input, #searchform input[type="submit"]{
 box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
@@ -117,24 +123,12 @@ height:41px;
 
 .widget.widget_collapsed_archives_widget{
 padding-top:20px;
-    width:100%;
 }
 .widget{
 float:left;
 }
 
-.btn-search
-{
-    background-color: #0a97cd;
-    color: #fff;
-    cursor: pointer;
-    height: 41px;
-    border-radius:0;
-    padding-bottom: 0;
-    padding-top: 0;
-    transition: all 0.25s linear 0s;
-    width: 29.6%;
-}
+
 /*about us page*/
 .post-114.page.type-page.status-publish.hentry{
 padding-top:20px;
@@ -144,12 +138,13 @@ padding-top:20px;
 /*stack papers*/
 .letter {
   background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border: 1px solid #EEE;
+    border-top:none;
   margin: 0px auto 0;
   min-height: 450px;
   padding: 24px;
   position: relative;
-        width: 80%;
+        width: 75%;
   
 }
 .letter:before, .letter:after {
@@ -176,25 +171,31 @@ padding-top:20px;
 /*end stack papers*/
 
 .aboutusul{
-margin:20px 0px;
-    border-bottom: 1px dotted #ddd;
-     border-top: 1px dotted #ddd;
+width:70%;
+margin:0 auto;
 }
-.aboutusul li a{
-
+.aboutusul li a,.aboutusul>li.active>a:hover,.aboutusul li a:hover{
+border-radius:0;
     color:black;
-    padding:10px 0px;
+     padding: 10px 17px;
     font-size:17px;
+    color:#0A97CD  ;
+    background-color: #FFF;
+    border:1px solid #EEE;
+    border-bottom:none;
 }
-.aboutusul>li.active>a:hover,.aboutusul li.active a, .aboutusul>li.active>a:focus{
-border:none; 
-color:#0A97CD;
-text-shadow:none;
+
+.nocomments{
+display:none;
 }
-.aboutusul li a:hover{
-background-color:transparent;
-  
-    color:#0A97CD;
+.aboutusul li.active a, .aboutusul>li.active>a:focus{
+    color:#FFF;
+    background-color: #0A97CD;
+    text-shadow: none;
+       border:1px solid #EEE;
+    border-right:none;
+    border-bottom:none;
+    
 }
 
 .overlay-hugeinc.open{
@@ -208,6 +209,66 @@ top:36px;
 /*end about us page*/
 
 	
+.ai1ec-subscribe-dropdown.ai1ec-btn-xs > .ai1ec-subscribe,a.ai1ec-btn.ai1ec-btn-default.ai1ec-btn-xs.ai1ec-pull-right.ai1ec-calendar-link{
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #1b6d85;
+    padding:5px !important;
+        box-shadow: 0 8px 6px -6px #777;
+    border:none;
+}
+
+p.ai1ec-no-results {
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 3px;
+     box-shadow: 0 8px 6px -6px #777;
+}
+
+
+.g.post.post-125.page.type-page.status-publish.hentry {
+margin: 0 auto;
+
+}
+.ai1ec-agenda-widget-view .ai1ec-date {
+ 
+    margin-bottom: 10px;
+}
+.calendar_event{
+background-color:#fff;
+	padding:20px;
+	margin-bottom:30px;
+	border: 1px solid #cdcdcd;
+    box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
+    border-radius: 3px;
+}
+.post-141.ai1ec_event.type-ai1ec_event.status-publish.hentry.events_categories-test-category section{
+    border-top: 1px solid #EEE;
+    padding-top: 20px;
+    margin-top: 8px;
+}
+footer#pagefooter  h3{
+font-size:17px;
+}
+footer#pagefooter a{
+color:#FFF;
+}
+footer#pagefooter .widget{
+margin-top:0px;
+}
+footer#pagefooter .widget ul{
+padding:0px;
+margin:0px;
+}
+footer#pagefooter .widget ul li {
+    list-style: none;
+       list-style: none;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 4px;
+}
+
+
  /* Small Devices, Tablets */
     @media only screen and (max-width : 600px) {
         .searchbar{
@@ -221,78 +282,31 @@ top:36px;
         }
        
     }
-
-#wpt_widget-2_content
-{
-	min-width:350px;
-	min-height:495px;
-	width:100%;
-	display:block;
+@media (min-width: 568px) {
+  .g.post.post-125.page.type-page.status-publish.hentry {
+    width: 550px;
+  }
 }
-form
-{
-    opacity: 1;
-    transition: opacity 1s;
-    margin-top:20px;
+@media (min-width: 992px) {
+  .g.post.post-125.page.type-page.status-publish.hentry {
+    width: 970px;
+  }
+    .nav.nav-tabs.aboutusul{
+    position:absolute;
+        top:15%;
+        z-index: 1;
+    }
+     .nav.nav-tabs.aboutusul li{
+       float:none;
+         margin-top:15px;
+    }
+    .aboutusul{
+width:auto;
+    }
+    
 }
-
-.form-control
-{
-	height:55px;
-	padding-left: 60px;
-}
-.fade-away
-{
-    opacity: 0;
-}
-
-textarea.form-control 
-{
-    padding-top: 13px;
-}
-.wpcf7-form-control-wrap:before
-{
-	font-family: 'FontAwesome';
-    color:#364956;
-    position: absolute;
-    left: 15px;
-	top:20px;
-	z-index:1;
-	font-size: 2em;
-}
-.wpcf7-form-control-wrap.name:before
-{
-	 content: "\f007";
-}
-.wpcf7-form-control-wrap.email:before
-{
-	 content: "\f0e0";
-}
-.wpcf7-form-control-wrap.message:before 
-{
-        content: "\f040";
-}
-
-.btn-info {
-    background-color: #0a97cd;
-    border-color: #46b8da;
-    color: #fff;
-}
-.article-contact
-{
-	min-height:495px;
-}
-.success-message 
-{
-    min-height: 500px;
-    padding-top: 150px;
-    text-align: center;
-    color:#0a97cd;
-    transform: scale(0);
-    transition: all ease 4s;
-}
-
-.showSuccess
-{
-	transform: scale(1);
+@media (min-width: 1200px) {
+  .g.post.post-125.page.type-page.status-publish.hentry {
+    width: 1170px;
+  }
 }

@@ -12,8 +12,6 @@ var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
 var pngquant = require('imagemin-pngquant');
-var gutil = require('gulp-util');
-var ftp = require('gulp-ftp');
 
 //paths
 var destPath = 'wordpress/wp-content/themes/sinthesis/';
@@ -73,7 +71,7 @@ gulp.task('scripts', function () {
 
 gulp.task('scripts:vendor', function () {
     console.log('starting scripts');
-    gulp.src([sourcePath + '/vendor/js/jquery.js',sourcePath + '/vendor/js/modernizr.custom.js',sourcePath + '/vendor/js/classie.js'])
+    gulp.src([sourcePath + '/vendor/js/jquery.js',sourcePath + '/vendor/js/bootstrap.min.js',sourcePath + '/vendor/js/modernizr.custom.js',sourcePath + '/vendor/js/classie.js'])
         .pipe(concat('vendor.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(destPath + '/js/'))
@@ -101,18 +99,6 @@ gulp.task('img', function () {
         .pipe(gulp.dest(destPath + '/img'));
 });
 
-gulp.task('ftp', function () {
-    return gulp.src('wordpress/**/*')
-        .pipe(ftp({
-            host: 'sinthesis.breezeblocks.info',
-            user: 'gulp',
-            pass: 'gulpFTP2015'
-        }))
-        // you need to have some kind of stream after gulp-ftp to make sure it's flushed
-        // this can be a gulp plugin, gulp.dest, or any kind of stream
-        // here we use a passthrough stream
-        .pipe(gutil.noop());
-});
 
 //Watching over you :P
 gulp.task('watch', function () {
