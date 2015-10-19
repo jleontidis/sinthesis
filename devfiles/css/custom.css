@@ -185,13 +185,14 @@ padding-top:20px;
   top: 1px;
   transform: rotate(1.4deg);
 }
+
 /*end stack papers*/
 
-.aboutus ul{
+.aboutus{
 width:70%;
 margin:0 auto;
 }
-.aboutus ul li a,.aboutus ul>li.active>a:hover,.aboutus ul li a:hover{
+.aboutus li a,.aboutus>li.active>a:hover,.aboutus li a:hover{
 border-radius:0;
     color:black;
      padding: 10px 17px;
@@ -205,7 +206,7 @@ border-radius:0;
 .nocomments{
 display:none;
 }
-.aboutus ul li.active a, .aboutus ul>li.active>a:focus{
+.aboutus li.active a, .aboutus>li.active>a:focus{
     color:#FFF;
     background-color: #0A97CD;
     text-shadow: none;
@@ -411,13 +412,13 @@ overflow:hidden;
     width: 550px;
   }
         #wpt_widget-2_content{
-        min-width:100%;
+        min-width:320px;
         }
         
         .letter{
         width:100%;
         }
-        .aboutus ul {
+        .aboutus{
         width: 90%;
         }
         
@@ -431,16 +432,16 @@ overflow:hidden;
   .g.post.post-125.page.type-page.status-publish.hentry {
     width: 970px;
   }
-    .aboutus ul{
+    .aboutus{
     position:absolute;
         top:15%;
         z-index: 1;
     }
-     .aboutus ul li{
+     .aboutus li{
        float:none;
          margin-top:15px;
     }
-    .aboutus ul{
+    .aboutus{
 width:auto;
     }
     

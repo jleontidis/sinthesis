@@ -7,9 +7,9 @@
 <?php get_header(); ?>
 <section class="container">
 		<div class="page">
-			<div class="content aboutus">
-                
- <ul class="nav nav-tabs">
+			<div class="content">
+              
+ <ul class="nav nav-tabs aboutus">
   <li class="active"><a data-toggle="tab" href="#sxetikameemas"><?php the_field('aboutus_tab_title1'); ?></a></li>
   <li ><a data-toggle="tab" href="#proswpa"><?php the_field('aboutus_tab_title2'); ?></a></li>
        <div class="clear-shadow"></div>

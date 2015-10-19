@@ -32,6 +32,6 @@
 	</section>
 	<div class="clearfix"></div>
 	<div class="readmore">
-		<a href="<?php the_permalink() ?>" class="btn btn-info"><?php _e('Read More'); ?></a>
+		<a href="<?php the_permalink() ?>" class="btn btn-info"><?php _e('Διαβάστε περισσότερα'); ?></a>
 	</div>
 </article>
